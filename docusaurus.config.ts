@@ -128,7 +128,7 @@ const config: Config = {
       name: "analytics-inject-tag",
       injectHtmlTags() {
         return {
-          headTags: [{ tagName: "script", attributes: { href: "https://stats.priver.dev/script.js", "data-website-id": "b294d27b-8be8-475a-8546-25052b47bec3" } }],
+          headTags: [{ tagName: "script", attributes: { src: "https://stats.priver.dev/script.js", defer: "defer", "data-website-id": "b294d27b-8be8-475a-8546-25052b47bec3" } }],
         };
       },
     })]
