@@ -1,7 +1,7 @@
 ---
+title: "DBCaml"
 sidebar_position: 1
 ---
-
 
 This is the documentation for version v0.0.1. This documentation will be updated 
 

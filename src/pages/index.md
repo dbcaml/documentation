@@ -64,11 +64,6 @@ DBCaml aims to offer:
 
 ```
 opam pin dbcaml.0.0.1 git+https://github.com/dbcaml/dbcaml
-```
-
-After that, you can use any of the [examples](./examples) as a base for your app, and run them:
-
-```
 dune exec ./my_app.exe
 ```
 # Important
