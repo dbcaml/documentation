@@ -24,7 +24,6 @@ DBCaml is a async database toolkit built on <a href="https://github.com/riot-ml/
 ** Note: DBCaml is currently in development and is not ready for production. Only for testing purposes **
 
 ```ocaml
-
 let driver =
     Dbcaml_driver_postgres.connection
       "postgresql://postgres:mysecretpassword@localhost:6432/development"

@@ -45,6 +45,12 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+        },
       } satisfies Preset.Options,
     ],
   ],
@@ -115,6 +121,17 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+
+  plugins: [
+    require.resolve("@easyops-cn/docusaurus-search-local"),
+    () => ({
+      name: "analytics-inject-tag",
+      injectHtmlTags() {
+        return {
+          headTags: [{ tagName: "script", attributes: { href: "https://stats.priver.dev/script.js", "data-website-id": "b294d27b-8be8-475a-8546-25052b47bec3" } }],
+        };
+      },
+    })]
 };
 
 export default config;
